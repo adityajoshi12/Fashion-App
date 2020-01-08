@@ -1,0 +1,63 @@
+body: Container(
+        height: double.infinity,
+              child: Column( children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  "Discover",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                      fontSize: 28),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.search,
+                        size: 28,
+                      ),
+                      Icon(
+                        Icons.filter_list,
+                        size: 28,
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
+            child: Row(
+              children: <Widget>[
+                Text(
+                  "Recommanded",
+                  style: TextStyle(color: Colors.black),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                Text("Popular", style: TextStyle(color: Colors.black26))
+              ],
+            ),
+          ),
+          Expanded(
+            
+            child: GridView.count(
+                physics: ScrollPhysics(),
+                crossAxisCount: 2,
+                children: List.generate(
+                  100,
+                  (index) {
+                    return ChoiceCard();
+                  },
+                )),
+          )
+        ]),
+      ),
+   
