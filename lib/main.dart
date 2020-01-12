@@ -13,8 +13,12 @@ import 'utils/class_bilder.dart';
 import 'views/home/home_view.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
   
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIOverlays([]);
+//  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+//    statusBarColor: Colors.transparent,
+//  ));
   SystemChrome.setPreferredOrientations(<DeviceOrientation>[
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown

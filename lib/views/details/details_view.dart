@@ -1,5 +1,7 @@
 library details_view;
 
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 import 'package:mvvm_flutter/core/models/product.model.dart';
@@ -8,6 +10,7 @@ import 'package:provider_architecture/provider_architecture.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutter/material.dart';
 import 'details_view_model.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 part 'details_mobile.dart';
 part 'details_tablet.dart';
