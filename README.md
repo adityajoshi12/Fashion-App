@@ -1,6 +1,6 @@
 # Fashion App
 
-Fashion App Mockup By [Didi Kurniawan] (https://dribbble.com/didikurniawan) 
+Fashion App Mockup By [Didi Kurniawan](https://dribbble.com/didikurniawan) 
 
 ## Getting Started
 
