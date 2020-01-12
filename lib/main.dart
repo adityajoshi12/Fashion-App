@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mvvm_flutter/theme/colors.dart';
+import 'package:mvvm_flutter/core/routing/route_name.dart';
 import 'package:mvvm_flutter/theme/theme_data.dart';
 import 'package:provider/provider.dart';
 
 import 'core/locator.dart';
 import 'core/providers.dart';
-import 'core/routing/route_name.dart';
 import 'core/routing/router.dart';
 import 'core/services/navigator_service.dart';
-import 'utils/class_bilder.dart';
 import 'views/home/home_view.dart';
 
 void main() async {
-  
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIOverlays([]);
 //  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -24,7 +21,7 @@ void main() async {
     DeviceOrientation.portraitDown
   ]).then((_) async {
     await LocatorInjector.setupLocator();
-   
+
     runApp(MyApp());
   });
 }
@@ -36,8 +33,11 @@ class MyApp extends StatelessWidget {
       providers: ProviderInjector.providers,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        navigatorKey: locator<NavigatorService>().navigatorKey,
         theme: CustomTheme(context).primaryTheme,
-        home: HomeView(),
+        onGenerateRoute: generateRoute,
+        initialRoute: HomeRoute,
+
       ),
     );
   }

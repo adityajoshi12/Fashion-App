@@ -46,9 +46,7 @@ class _DetailsMobile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       IconButton(
-                          onPressed: () {
-                            viewModel.navigateBack();
-                          },
+                          onPressed: () => viewModel.navigateBack(),
                           icon: Icon(Icons.arrow_back_ios)),
                       Row(
                         children: <Widget>[

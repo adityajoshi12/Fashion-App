@@ -28,7 +28,7 @@ class __HomeMobileState extends State<_HomeMobile>
             'Cart',
             style: TextStyle(color: Colors.white),
           ),
-          icon: Icon(Icons.shopping_cart, color: Colors.white),
+          icon: SvgPicture.asset('assets/images/bag.svg',height: 24,width: 24,color: Colors.white,),
           page: CartView(),
         ),
         KFDrawerItem.initWithPage(
@@ -44,7 +44,7 @@ class __HomeMobileState extends State<_HomeMobile>
             'Filter',
             style: TextStyle(color: Colors.white),
           ),
-          icon: Icon(Icons.filter, color: Colors.white),
+          icon: SvgPicture.asset('assets/images/setting.svg',height: 24,width: 24,color: Colors.white,),
           page: SettingsView(),
         ),
         KFDrawerItem.initWithPage(
@@ -109,7 +109,7 @@ class __HomeMobileState extends State<_HomeMobile>
                     "Aditya Joshi",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  Text("aditya@interwork.biz")
+                  Text("aditya@imail.com")
                 ],
               ),
             )

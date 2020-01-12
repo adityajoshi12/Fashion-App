@@ -19,8 +19,8 @@ class _RecommandedTabMobile extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return InkWell(
               onTap: () {
-                //viewModel.nav(products[index]);
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsView(products[index])));
+                viewModel.nav(products[index]);
+                //Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsView(products[index])));
               },
               child: Hero(
                   tag:products[index].position,

@@ -10,7 +10,7 @@ class RecommandedTabViewModel extends BaseViewModel {
   RecommandedTabViewModel();
   final NavigatorService _navigationService = locator<NavigatorService>();
   void nav(Product product) {
-    //_navigationService.navigateTo("details",arguments: product);
+    _navigationService.navigateTo("details",arguments: product);
     
   }
 }
