@@ -1,6 +1,6 @@
 # Fashion App
 
-A new Flutter project.
+Fashion App Mockup By [Didi Kurniawan] (https://dribbble.com/didikurniawan) 
 
 ## Getting Started
 
