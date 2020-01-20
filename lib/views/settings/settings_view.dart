@@ -1,14 +1,17 @@
 library settings_view;
 
+import 'package:flutter/material.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 import 'package:provider_architecture/provider_architecture.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:flutter/material.dart';
+
 import 'settings_view_model.dart';
 
-part 'settings_mobile.dart';
-part 'settings_tablet.dart';
 part 'settings_desktop.dart';
+
+part 'settings_mobile.dart';
+
+part 'settings_tablet.dart';
 
 class SettingsView extends KFDrawerContent {
   @override

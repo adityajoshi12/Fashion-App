@@ -26,7 +26,7 @@ class DetailsView extends KFDrawerContent {
 class _DetailsViewState extends State<DetailsView> {
   @override
   Widget build(BuildContext context) {
-    DetailsViewModel viewModel = DetailsViewModel();
+   final DetailsViewModel viewModel = DetailsViewModel();
     return ViewModelProvider<DetailsViewModel>.withConsumer(
         viewModel: viewModel,
         onModelReady: (viewModel) {

@@ -3,6 +3,7 @@ import 'package:mvvm_flutter/core/models/product.model.dart';
 import 'package:mvvm_flutter/views/cart/cart_view.dart';
 import 'package:mvvm_flutter/views/details/details_view.dart';
 import 'package:mvvm_flutter/views/home/home_view.dart';
+import 'package:mvvm_flutter/views/login/login_view.dart';
 
 import 'route_name.dart';
 
@@ -13,6 +14,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(HomeView(), settings);
     case CartRoute:
       return _getPageRoute(CartView(), settings);
+          case LoginRoute:
+      return _getPageRoute(LoginView(), settings);
     case DetailsRoute:
       var p = settings.arguments as Product;
       return _getPageRoute(DetailsView(p), settings);

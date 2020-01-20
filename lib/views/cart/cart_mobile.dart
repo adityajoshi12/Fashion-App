@@ -4,7 +4,7 @@ class _CartMobile extends StatefulWidget {
   @override
   __CartMobileState createState() => __CartMobileState();
   final CartViewModel viewModel;
-  Function onMenuPressed;
+  final Function onMenuPressed;
   _CartMobile(this.viewModel, this.onMenuPressed);
 }
 

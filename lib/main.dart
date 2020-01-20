@@ -8,14 +8,10 @@ import 'core/locator.dart';
 import 'core/providers.dart';
 import 'core/routing/router.dart';
 import 'core/services/navigator_service.dart';
-import 'views/home/home_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIOverlays([]);
-//  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-//    statusBarColor: Colors.transparent,
-//  ));
   SystemChrome.setPreferredOrientations(<DeviceOrientation>[
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown
@@ -36,8 +32,7 @@ class MyApp extends StatelessWidget {
         navigatorKey: locator<NavigatorService>().navigatorKey,
         theme: CustomTheme(context).primaryTheme,
         onGenerateRoute: generateRoute,
-        initialRoute: HomeRoute,
-
+        initialRoute: LoginRoute,
       ),
     );
   }
